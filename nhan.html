@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .red {
+        background-color: red;
+      }
+      .blue {
+        background-color: blue;
+      }
+      .ye {
+        background-color: yellow;
+      }
+      @media (max-width: 767px) {
+        .container {
+          grid-template-columns: 1fr;
+        }
+      }
+      @media (max-width: 1023px) {
+        .container {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="red">123</div>
+      <div class="blue">123</div>
+      <div class="ye">123</div>
+    </div>
+  </body>
+</html>
